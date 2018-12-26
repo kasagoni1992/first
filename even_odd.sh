@@ -3,10 +3,14 @@
 echo "enter the number:"
 #read n
 rem=$(( n % 2 ))
+
+if [[ $RUN == "YES" ]]; then
+
 if [ $rem -eq 0 ]
 then
 	echo "the number $n is even"
 else
 	echo "the number $n is odd"
 fi
-echo " blah blah blah blah changing the some code"
+fi
+#echo " blah blah blah blah changing the some code"
