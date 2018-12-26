@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "enter the number:"
-read n
+#read n
 rem=$(( n % 2 ))
 if [ $rem -eq 0 ]
 then
