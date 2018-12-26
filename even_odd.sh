@@ -1,10 +1,10 @@
 #!/bin/bash
 
-echo "enter the number:"
+#echo "enter the number:"
 #read n
 rem=$(( n % 2 ))
 
-if [[ $RUN == "YES" ]]; then
+if [[ $RUN == "YES" || $RUN == "MAYBE"]]; then
 
 if [ $rem -eq 0 ]
 then
