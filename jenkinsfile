@@ -1,0 +1,22 @@
+
+node {
+   def mvnHome
+   stage('Preparation') { // for display purposes
+    sh "echo checking out Git repo"
+    git 'https://github.com/gabrielf/maven-samples.git'  
+   }
+   stage('Build') {
+    sh '''echo "Executing Maven Build"
+          cd $WORKSPACE
+          mvn clean package'''
+   }
+     stage('Test') {
+    sh "echo Test Build"  
+   }
+     stage('Deploy') {
+    sh "echo Deploy "  
+   }
+   stage('Results') {
+    sh "echo stage Results"  
+   }
+}
